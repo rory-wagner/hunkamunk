@@ -1,0 +1,14 @@
+Rules to the json in this directory:
+
+    the simple format goes as follows:
+
+    export default {
+        title_text: "",
+        title_picture: "",
+        article_parts: [
+            "Some text",
+            "path to img",
+        ]
+    };
+
+The hard part to distinguish here is that every even part in article_parts is text, while the odd indeces are pictures.
