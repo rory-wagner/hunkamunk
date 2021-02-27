@@ -1,3 +1,6 @@
+import intro from "./article_text/intro.json";
+
+
 export default [
-    "../article_text/intro.es6",
+    intro,
 ];
