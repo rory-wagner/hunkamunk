@@ -34,7 +34,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 Vue.use(VueRouter);
-// import breadcrumbs from 'vue-router-bootstrap-breadcrumbs';
 import routes from './routes.es6';
 export const router = new VueRouter({routes});
 
@@ -42,7 +41,7 @@ export default {
   router,
   name: 'App',
   components: {
-    // breadcrumbs,
+
   },
 }
 </script>
