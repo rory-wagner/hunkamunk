@@ -8,6 +8,9 @@
       </div>
     </div>
     <div v-if="this.article_is_selected">
+      <button v-on:click="deselect()">
+        Back to List
+      </button>
       <ArticleDisplay v-bind:article_obj="article_object">
       </ArticleDisplay>
     </div>
@@ -30,9 +33,11 @@ export default {
   },
   methods:{
     select(article_obj) {
-      console.log("made it inside");
       this.article_is_selected = true;
       this.article_object = article_obj;
+    },
+    deselect(){
+      this.article_is_selected = false;
     }
   },
   components: {
