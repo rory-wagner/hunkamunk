@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand navbar-light bg-light">
       <div class="collapse navbar-collapse">
-        <h2>  Hunkamunk  </h2>
+        <h2>Hunkamunk</h2>
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
             <b-link
@@ -23,7 +23,6 @@
             </b-link>
           </li>
         </ul>
-        <!-- <img src="./assets/exam-random-gradient-mandelbrot.jpg" alt="mandelbrot fractal" class="img-fluid"> -->
       </div>
     </nav>
     <router-view></router-view>
