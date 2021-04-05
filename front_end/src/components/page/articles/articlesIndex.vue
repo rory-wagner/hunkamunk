@@ -8,7 +8,7 @@
       </div>
     </div>
     <div v-if="this.article_is_selected">
-      <button v-on:click="deselect()">
+      <button v-on:click="deselect()" class="btn btn-outline-primary btn-sm">
         Back to List
       </button>
       <ArticleDisplay v-bind:article_obj="article_object">

@@ -1,13 +1,15 @@
 <template>
   <div>
-    <h1>{{article_obj.title_text}}</h1>
-    <img :src="imgPath(article_obj.title_picture)">
-    <div>
-      <div v-for="(part, index) in article_obj.article_parts" :key="index">
-        <p v-if="part.type == 'p'">
-          {{part.text}}
-        </p>
-        <img v-else :src="imgPath(part.path)">
+    <div class="mx-auto w-50">
+      <h3>{{article_obj.title_text}}</h3>
+      <img :src="imgPath(article_obj.title_picture)" class="img-fluid">
+      <div>
+        <div v-for="(part, index) in article_obj.article_parts" :key="index">
+          <p v-if="part.type == 'p'">
+            {{part.text}}
+          </p>
+          <img v-else :src="imgPath(part.path)">
+        </div>
       </div>
     </div>
   </div>
